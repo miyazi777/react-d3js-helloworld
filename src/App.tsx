@@ -6,7 +6,8 @@ function App() {
 
   useEffect(() => {
     const svgElement = d3.select(ref.current);
-    svgElement.append("circle").attr("cx", 150).attr("cy", 70).attr("r", 50);
+    // cx:円の中心のx座標 cy:円の中心のy座標 r:円の半径
+    svgElement.append("circle").attr("cx", 120).attr("cy", 70).attr("r", 60);
   }, []);
 
   return <svg ref={ref} />;
